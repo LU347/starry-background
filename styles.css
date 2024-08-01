@@ -1,0 +1,32 @@
+:root {
+    --height: 70vh;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: black;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--height);
+    z-index: 0;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--height);
+    background: radial-gradient(circle at 96% 100%, rgba(0, 0, 0, 0.6) 18%, rgba(0, 142, 160, 0.39) 48%, rgba(0, 0, 0, 0.47) 85%);
+    transform: scale(110%, 100%);
+    z-index: 1;
+    pointer-events: none;
+}
